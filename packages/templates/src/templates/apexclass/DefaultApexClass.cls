@@ -1,8 +1,7 @@
 public with sharing class <%= apiName %> {
-    public <%= apiName %>() {
+    		public <%= apiName %>(String prop) {
+			this.prop = prop;
+    		}
 
-    }
-    public newTest() {
-
-    }
-}
+		@AuraEnabled public String prop { get;set; }
+	}
